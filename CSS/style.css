@@ -10,36 +10,82 @@ body {
 /*Encabezado*/
 .header {
     background: linear-gradient(270deg, rgb(11, 66, 148), #dde4d5);
-    padding: 40px 20px;
+    padding: 40px 30px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0,2);
 }
 
 /*Contenido principal*/
-.conteiner {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    padding: 40px 20px;
+    background-color: rgba(149, 203, 247, 0.8);
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .card {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    background-color: rgba(16, 168, 206, 0.589);
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
+    text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadein 1s ease-in-out;
 }
 
-.btn {
+.btn-group{
     display: inline-block;
+    gap: 25px;
     padding: 10px 20px;
     background-color: #073f94;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    text-align: center;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px 30px;
+    border-radius: 15px;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn.primario {
+    background-color: #4903b8;
+    color: white;
+}
+
+.btn.primario:hover {
+    background-color: #f8fc04;
+    color: rgb(0, 0, 0);
+}
+
+.btn.secundario {
+    background-color: #39d9ee;
+    color: rgb(0, 0, 0);
+}
+
+.btn.secundario:hover {
+    background-color: #a00c62;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    background-color: #073f94;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 15px;
 }
