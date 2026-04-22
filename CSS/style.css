@@ -28,6 +28,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#formRegistro {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    background: linear-gradient(270deg, rgb(11, 66, 148), #dde4d5);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: block;
+}
 
 .card {
     background-color: rgba(16, 168, 206, 0.589);
@@ -51,6 +64,8 @@ body {
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
+
+
 
 .btn {
     flex: 1;
